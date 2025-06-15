@@ -34,6 +34,13 @@ next_btn.addEventListener('click', (e) =>{
     changeSlide()
 })
 
+document.querySelector(".foot-panel1").addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // for smooth scrolling
+    });
+  });
+
 
 
 

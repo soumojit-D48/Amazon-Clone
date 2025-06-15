@@ -16,6 +16,32 @@ a {
   color: inherit;
 }
 
+.curpnt{
+  cursor: pointer;
+}
+
+/* .hovGray:hover {
+  border: 1px solid rgb(107, 105, 100);
+  cursor: pointer;
+} */
+
+.hovGray {
+  border: 1.5px solid transparent;
+  /* display: inline-block; So border shows for spans too */
+  transition: all 0.3s ease; /* Smooth effect */
+  cursor: pointer;
+  padding: 2px;
+  margin: 1px;
+}
+
+/* Hover effect */
+.hovGray:hover {
+  border: 1.5px solid rgb(165, 163, 159);
+  /* color: orangered; */
+  padding: 2px;
+
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -57,6 +83,16 @@ nav {
   margin-left: 15px;
   /* box-sizing: border-box; */
 }
+
+.nav-search {
+    border: 3px solid transparent;
+    transition: border 0.3s ease; /* optional for smooth effect */
+}
+
+.nav-search:hover {
+    border: 3px solid orange;
+}
+
 
 .nav-search-catagory {
   display: flex;
@@ -139,7 +175,7 @@ nav {
 .nav-bottom div {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   font-weight: 500;
 }
 
@@ -337,16 +373,12 @@ icon.a-icon-previous-rounded {
     font-size: 13px;
 }
 
+
 .product-price h5{
     color: #525252;
     font-size: 15px;
     font-weight: 400;
 }
-
-
-
-
-
 
 
 footer{
@@ -360,6 +392,7 @@ footer{
   justify-content: center;
   align-items: center;
   font-size: 0.85rem;
+  cursor: pointer;
 }
 
 .foot-panel2{
@@ -403,6 +436,7 @@ footer{
   background-size: cover;
   height: 50px;
   width: 100px;
+  margin-top: 17px;
 }
 
 .foot-panel4{
